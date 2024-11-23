@@ -5,9 +5,9 @@ st.balloons()
 # Show title and description.
 st.title("💬 Mi Primer Bot")
 st.write(
-   "This is a simple chatbot that uses OpenAI's GPT-3.5 model to generate responses. "
-   "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
-   "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
+   "Este es el primer chatbot usando Github, streamlit y el API Key de OpenAI"
+   "Para usar esta aplicación es necesario usar el API Key de OpenAI en esta direccion [here](https://platform.openai.com/account/api-keys). "
+   "Puedes seguir paso a paso como hacer esta aplicación en la siguiente dirección [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
 )
 openai_api_key = st.secrets["api_key"] 
 # Create an OpenAI client.
