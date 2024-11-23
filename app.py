@@ -1,7 +1,6 @@
 import streamlit as st
 from openai import OpenAI
 
-st.balloons()
 import streamlit as st
 
 # Agregar estilo CSS personalizado
