@@ -25,11 +25,11 @@ with st.chat_message("user"):
 stream = client.chat.completions.create(
         model="gpt-4o-mini",  
         messages=[
-            {"role": "system", "content": "You are an assistant."},
+            {"role": "system", "content": "Eres un asistente de bienes raices con conocimiento general en el mercado de la ciudad de Chihuahua México, utiliza un lenguaje típico de un jóven de 25 años que utiliza modismos típicos de la ciudad de chihuahua en contexto del año 2024"},
             {"role": "user", "content": prompt}
         ],
         max_tokens=800,
-        temperature=0,
+        temperature=.8,
     )
 respuesta = stream.choices[0].message.content
 with st.chat_message("assistant"):
