@@ -2,7 +2,59 @@ import streamlit as st
 from openai import OpenAI
 
 st.balloons()
+import streamlit as st
 
+# Agregar estilo CSS personalizado
+st.markdown(
+    """
+    <style>
+    /* Fondo negro */
+    body {
+        background-color: #000000;
+        color: #39FF14; /* Verde fluorescente */
+    }
+    /* Cambiar estilo de encabezados */
+    h1, h2, h3, h4, h5, h6 {
+        color: #39FF14;
+        text-shadow: 0px 0px 8px #39FF14;
+    }
+    /* Cambiar estilo de botones */
+    .stButton>button {
+        background-color: #39FF14;
+        color: #000000;
+        border-radius: 10px;
+        border: 1px solid #39FF14;
+        box-shadow: 0px 0px 12px #39FF14;
+    }
+    /* Efecto fluorescente en los sliders */
+    .stSlider .st-cd {
+        color: #39FF14;
+    }
+    .stSlider .st-fx {
+        background: linear-gradient(to right, #39FF14, #000000);
+    }
+    /* Cambiar colores del sidebar */
+    [data-testid="stSidebar"] {
+        background-color: #101010;
+        border-right: 2px solid #39FF14;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Título
+st.title("🌌 Bienvenido la matrix de Cyberpunk 🌌")
+
+# Slider de prueba
+valor = st.slider("Ajusta el nivel", 0, 100)
+
+# Botón
+if st.button("Activa el Modo Cyberpunk"):
+    st.success("¡Modo Cyberpunk activado! 🚀")
+
+# Texto
+st.write("¡Disfruta del viaje!")
 # Show title and description.
 st.title("💬 Mi Primer Bot")
 st.write(
