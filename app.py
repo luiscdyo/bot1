@@ -3,57 +3,82 @@ from openai import OpenAI
 
 import streamlit as st
 
-# Agregar estilo CSS personalizado
+# Agregar estilo CSS personalizado para el tema Matrix
 st.markdown(
     """
     <style>
     /* Fondo negro */
     body {
         background-color: #000000;
-        color: #39FF14; /* Verde fluorescente */
+        color: #00FF00; /* Verde Matrix */
     }
-    /* Cambiar estilo de encabezados */
+    /* Estilo para encabezados */
     h1, h2, h3, h4, h5, h6 {
-        color: #39FF14;
-        text-shadow: 0px 0px 8px #39FF14;
+        color: #00FF00;
+        text-shadow: 0px 0px 8px #00FF00;
+        font-family: "Courier New", Courier, monospace; /* Fuente estilo Matrix */
     }
-    /* Cambiar estilo de botones */
+    /* Cambiar estilo de los textos normales */
+    div.stMarkdown p {
+        color: #00FF00;
+        font-family: "Courier New", Courier, monospace;
+    }
+    /* Botones Matrix */
     .stButton>button {
-        background-color: #39FF14;
-        color: #000000;
+        background-color: #000000;
+        color: #00FF00;
+        font-family: "Courier New", Courier, monospace;
+        border: 2px solid #00FF00;
         border-radius: 10px;
-        border: 1px solid #39FF14;
-        box-shadow: 0px 0px 12px #39FF14;
+        box-shadow: 0px 0px 12px #00FF00;
+        transition: 0.3s;
     }
-    /* Efecto fluorescente en los sliders */
+    .stButton>button:hover {
+        background-color: #00FF00;
+        color: #000000;
+    }
+    /* Slider */
     .stSlider .st-cd {
-        color: #39FF14;
+        color: #00FF00;
     }
     .stSlider .st-fx {
-        background: linear-gradient(to right, #39FF14, #000000);
+        background: linear-gradient(to right, #00FF00, #000000);
     }
-    /* Cambiar colores del sidebar */
+    /* Sidebar estilo Matrix */
     [data-testid="stSidebar"] {
         background-color: #101010;
-        border-right: 2px solid #39FF14;
+        border-right: 2px solid #00FF00;
+    }
+    /* Scroll estilo Matrix */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #00FF00;
+        border-radius: 10px;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-# Título
-st.title("🌌 Bienvenido la matrix de Cyberpunk 🌌")
+# Título de la app
+st.title("🟢 Bienvenido al estilo Matrix 🟢")
 
-# Slider de prueba
-valor = st.slider("Ajusta el nivel", 0, 100)
+# Subtítulo
+st.subheader("El código lo es todo...")
 
-# Botón
-if st.button("Activa el Modo Cyberpunk"):
-    st.success("¡Modo Cyberpunk activado! 🚀")
+# Interacción con el usuario
+if st.button("Ver la verdad"):
+    st.write("La Matrix es más profunda de lo que crees... 🟩")
+else:
+    st.write("¿Listo para la próxima simulación?")
 
-# Texto
-st.write("¡Disfruta del viaje!")
+# Slider para ajustar niveles
+nivel = st.slider("Elige tu nivel en la Matrix", 0, 100)
+
+# Mostrar el valor seleccionado
+st.write(f"Nivel actual: {nivel}")
 # Show title and description.
 st.title("💬 Mi Primer Bot")
 st.write(
