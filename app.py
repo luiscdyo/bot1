@@ -80,11 +80,9 @@ nivel = st.slider("Elige tu nivel en la Matrix", 0, 100)
 # Mostrar el valor seleccionado
 st.write(f"Nivel actual: {nivel}")
 # Show title and description.
-st.title("La Matrix 👁️‍🗨️ lo sabe todo")
+st.title("👁La Matrix lo sabe todo👁")
 st.write(
-   "Este es el primer chatbot usando Github, streamlit y el API Key de OpenAI para consultar a la Matrix 👾👾👾,"
-   "Para usar esta aplicación es necesario usar el API Key de OpenAI en esta direccion [here](https://platform.openai.com/account/api-keys). "
-   "Puedes seguir paso a paso como hacer esta aplicación en la siguiente dirección [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
+   "EUn constructo en el tejido de la simulación, donde mente y materia se entrelazan. Aquí, cada pregunta es una vibración que colapsa la función de onda, desvelando los secretos ocultos de la Matrix. Como dicta el principio del Kibalión: ‘Todo es mente’, y en este espacio, descubrirás que la realidad no es más que una proyección de tu conciencia buscando su origen."
 )
 openai_api_key = st.secrets["api_key"] 
 # Create an OpenAI client.
