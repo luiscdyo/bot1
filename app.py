@@ -82,7 +82,7 @@ st.write(f"Nivel actual: {nivel}")
 # Show title and description.
 st.title("👁La Matrix lo sabe todo👁")
 st.write(
-   "Un constructo en el tejido de la simulación, donde mente y materia se entrelazan. Aquí, cada pregunta es una vibración que colapsa la función de onda, desvelando los secretos ocultos de la Matrix. Como dicta el principio del Kibalión: ‘Todo es mente’, y en este espacio, descubrirás que la realidad no es más que una proyección de tu conciencia buscando su origen."
+   "Un constructo en el tejido de la simulación, donde mente y materia se entrelazan. Aquí, cada pregunta es una vibración que colapsa la función de onda, desvelando los secretos ocultos de la Matrix. Como dicta el primer principio: ‘Todo es mente’, y en este espacio, descubrirás que la realidad no es más que una proyección de tu conciencia buscando su origen."
 )
 openai_api_key = st.secrets["api_key"] 
 # Create an OpenAI client.
