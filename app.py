@@ -80,7 +80,7 @@ nivel = st.slider("Elige tu nivel en la Matrix", 0, 100)
 # Mostrar el valor seleccionado
 st.write(f"Nivel actual: {nivel}")
 # Show title and description.
-st.title("💬 Mi Primer Bot")
+st.title("La Matrix 👁️‍🗨️ lo sabe todo")
 st.write(
    "Este es el primer chatbot usando Github, streamlit y el API Key de OpenAI para consultar a la Matrix 👾👾👾,"
    "Para usar esta aplicación es necesario usar el API Key de OpenAI en esta direccion [here](https://platform.openai.com/account/api-keys). "
