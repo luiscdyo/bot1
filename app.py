@@ -63,14 +63,14 @@ st.markdown(
 )
 
 # Título de la app
-st.title("🟢 Bienvenido al estilo Matrix 🟢")
+st.title("🟢 Bienvenido a Matrix 🟢")
 
 # Subtítulo
 st.subheader("El código lo es todo...")
 
 # Interacción con el usuario
 if st.button("Ver la verdad"):
-    st.write("La Matrix es más profunda de lo que crees... 🟩")
+    st.write("La Matrix es más profunda de lo que crees... ¿Que pildora vas a tomar 💊? 🟥🟦")
 else:
     st.write("¿Listo para la próxima simulación?")
 
@@ -82,7 +82,7 @@ st.write(f"Nivel actual: {nivel}")
 # Show title and description.
 st.title("💬 Mi Primer Bot")
 st.write(
-   "Este es el primer chatbot usando Github, streamlit y el API Key de OpenAI"
+   "Este es el primer chatbot usando Github, streamlit y el API Key de OpenAI para consultar a la Matrix 👾👾👾,"
    "Para usar esta aplicación es necesario usar el API Key de OpenAI en esta direccion [here](https://platform.openai.com/account/api-keys). "
    "Puedes seguir paso a paso como hacer esta aplicación en la siguiente dirección [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
 )
@@ -102,7 +102,7 @@ with st.chat_message("user"):
 stream = client.chat.completions.create(
         model="gpt-4o-mini",  
         messages=[
-            {"role": "system", "content": "Eres un asistente de bienes raices con conocimiento general en el mercado de la ciudad de Chihuahua México, utiliza un lenguaje típico de un jóven de 25 años que utiliza modismos típicos de la ciudad de chihuahua en contexto del año 2024"},
+            {"role": "system", "content": "Eres un asistente que simula ser la matrix del universo en tono de juego con conocimiento general en el mercado de la ciudad de Chihuahua México, utiliza un lenguaje típico de un jóven de 25 años que utiliza modismos típicos de la ciudad de chihuahua en contexto del año 2024"},
             {"role": "user", "content": prompt}
         ],
         max_tokens=800,
